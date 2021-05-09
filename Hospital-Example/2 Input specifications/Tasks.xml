@@ -9,8 +9,8 @@
 	
 	<atomic_task name="atGetPermission" ID="at4" robots="1" duration="00:05:00" />
 	
-	<composite_task name="ctCleanRoom" ID="ct1" tasks="at1,at2" ordered="False" consecutive="True"/>
+	<compound_task name="ctCleanRoom" ID="ct1" tasks="at1,at2" ordered="False" consecutive="True"/>
 	
-	<composite_task name="ctCleanPatientRoom" ID="ct2" tasks="at4,ct1"  ordered="True" consecutive="True"/>
+	<compound_task name="ctCleanPatientRoom" ID="ct2" tasks="at4,ct1"  ordered="True" consecutive="True"/>
 	
 </tasks>
