@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tasks>
+
+	<atomic_task name="atCleanFloor" 	ID="at1" robots="1" duration="00:30:00" />
+	
+	<atomic_task name="atSanitizeRoom" ID="at2" robots="1" duration="00:60:00" />
+	
+	<atomic_task name="atMoveFurniture" ID="at3" robots="2" duration="00:40:00" />
+	
+	<atomic_task name="atGetPermission" ID="at4" robots="1" duration="00:05:00" />
+	
+	<composite_task name="ctCleanRoom" ID="ct1" tasks="at1,at2" ordered="False" consecutive="True"/>
+	
+	<composite_task name="ctCleanPatientRoom" ID="ct2" tasks="at4,ct1"  ordered="True" consecutive="True"/>
+	
+</tasks>
