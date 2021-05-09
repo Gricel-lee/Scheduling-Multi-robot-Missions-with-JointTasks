@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<missions>
+	<missiontask ID="t1" name="task1" task = "ct1" locationID = "RoomA" criticality="low"/>
+	<missiontask ID="t2" name="task2" task = "ct1" locationID = "RoomB" criticality="low"/>
+	<missiontask ID="t3" name="task3" task = "at3" locationID = "RoomD" criticality="low"/>
+	<missiontask ID="t4" name="task4" task = "ct2" locationID = "RoomC" criticality="low"/>	
+</missions>
