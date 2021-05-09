@@ -1,6 +1,6 @@
 # Scheduling Multi-robot Missions with JointTasks
 
-We present a work-in-progress on multi-robot allocation and scheduling of missions from high level specifications.
+We present a work-in-progress on multi-robot allocation and scheduling of missions from high level specifications. Missions can include atomic tasks and compount tasks. Atomic tasks are single tasks that can be done by one or multiple robots, compound tasks are tasks that can be decomposed into atomic or composite tasks  [[1]](#1).
 
 ## Folder content
 
@@ -17,5 +17,12 @@ The **Hospital-Example** folder contains a hospital case study to demonstrait th
 ## Tool description
 The approach taken for the scheduling of tasks consists in three stages.
 - Stage one is the inputs as in the [Input specifications folder](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/tree/master/Hospital-Example/2%20Input%20specifications).
-- Stage two 
+- Stage two allocates tasks to robots via the constraint solver Alloy. A single file with the problem in declarative Alloy language is created. The constraint solver returns a family of models that fulfil the constraints impose by which tasks a robot can execute given its set of capabilities.
+- Stage three synthesize a policy for the scheduling of tasks by each robot. The step starts applying the transitive clousure (for each model found by Alloy) to find which robots share constraints so that they must be modelled together (for example, when two robots perform a joint task)
 ![Diagram](https://user-images.githubusercontent.com/63869574/117586412-3e057600-b0d5-11eb-899d-3f0ecb5b4155.JPG)
+
+## References
+<a id="1">[1]</a> 
+Korsah, G. A., Stentz, A., & Dias, M. B. (2013).
+A comprehensive taxonomy for multi-robot task allocation.
+The International Journal of Robotics Research, 32(12), 1495-1512.
