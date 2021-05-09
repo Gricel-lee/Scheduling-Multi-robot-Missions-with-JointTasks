@@ -15,5 +15,7 @@ The **Hospital-Example** folder contains a hospital case study to demonstrait th
 
 
 ## Tool description
-The approach taken for the scheduling of tasks consists in three stages. Stage one is the inputs as in the [Input specifications folder](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/tree/master/Hospital-Example/2%20Input%20specifications)
+The approach taken for the scheduling of tasks consists in three stages.
+- Stage one is the inputs as in the [Input specifications folder](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/tree/master/Hospital-Example/2%20Input%20specifications).
+- Stage two 
 ![Diagram](https://user-images.githubusercontent.com/63869574/117586412-3e057600-b0d5-11eb-899d-3f0ecb5b4155.JPG)
