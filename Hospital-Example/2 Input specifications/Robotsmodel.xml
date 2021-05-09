@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robots>
+  	
+  	<robot name="robot1" 	ID="r1" rloc="warehouse1">
+  		<robottype  name="robotCleaner1" ID="rt1">
+  	  	    <capability name="cBrushFloor" ID="c1" canruntask="at1" efficiency="1" prob_success="99%"/>
+  		    <capability name="cUVSanitize" ID="c2" canruntask="at2" efficiency="1" prob_success="95%"/>
+  		    <capability name="cAskPermission" ID="c3" canruntask="at4" efficiency="1" prob_success="99"/>
+  		</robottype> 
+  	</robot>
+  	
+  	<robot name="robot2" 	ID="r2" rloc="warehouse2">
+  		<robottype  name="robotCleaner2" ID="rt1">
+  	  	    <capability name="cBrushFloor" ID="c1" canruntask="at1" efficiency="0.85" prob_success="90%"/>
+  		    <capability name="cUVSanitize" ID="c2" canruntask="at2" efficiency="0.92" prob_success="85%"/>
+  		    <capability name="cAskPermission" ID="c3" canruntask="at4" efficiency="0.50" prob_success="98"/>
+  		</robottype> 
+  	</robot>
+  	
+  	<robot name="robot3" 	ID="r3" rloc="warehouse3">
+  		<robottype  name="robotPicknPlace" ID="rt2">
+  	  	  	<capability name="cMoveObject" ID="c4" canruntask="at3" efficiency="1" prob_success="89%"/>
+  		</robottype> 
+  	</robot>
+  	
+  	<robot name="robot4" 	ID="r4" rloc="warehouse4">
+  		<robottype  name="robotPicknPlace" ID="rt2">
+  	  	  	<capability name="cMoveObject" ID="c4" canruntask="at3" efficiency="1.14" prob_success="95%"/>
+  		</robottype> 
+  	</robot>
+	
+</robots>
