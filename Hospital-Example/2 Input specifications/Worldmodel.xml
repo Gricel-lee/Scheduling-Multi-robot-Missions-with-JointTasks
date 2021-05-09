@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worldmodel>
 
-	<location loc="(25,25)" ID="l1" loc_atomicProp="WarehouseR1"/>
-	<location loc="(75,25)" ID="l2" loc_atomicProp="WarehouseR2"/>
-	<location loc="(125,25)" ID="l3" loc_atomicProp="WarehouseR3"/>
-	<location loc="(175,25)" ID="l4" loc_atomicProp="WarehouseR4"/>
-	<location loc="(225,25)" ID="l5" loc_atomicProp="WarehouseR5"/>
-	<location loc="(275,25)" ID="l6" loc_atomicProp="WarehouseR6"/>
-	<location loc="(325,25)" ID="l7" loc_atomicProp="WarehouseR7"/>
-	<location loc="(375,25)" ID="l8" loc_atomicProp="WarehouseR8"/>
+	<location loc="(25,25)" ID="l1" loc_atomicProp="Warehouse1"/>
+	<location loc="(75,25)" ID="l2" loc_atomicProp="Warehouse2"/>
+	<location loc="(125,25)" ID="l3" loc_atomicProp="Warehouse3"/>
+	<location loc="(175,25)" ID="l4" loc_atomicProp="Warehouse4"/>
+	<location loc="(225,25)" ID="l5" loc_atomicProp="Warehouse5"/>
+	<location loc="(275,25)" ID="l6" loc_atomicProp="Warehouse6"/>
+	<location loc="(325,25)" ID="l7" loc_atomicProp="Warehouse7"/>
+	<location loc="(375,25)" ID="l8" loc_atomicProp="Warehouse8"/>
 	
 	<location loc="(25,125)" ID="l9" loc_atomicProp="RoomA"/>
 	<location loc="(75,125)" ID="l10" loc_atomicProp="RoomB"/>
