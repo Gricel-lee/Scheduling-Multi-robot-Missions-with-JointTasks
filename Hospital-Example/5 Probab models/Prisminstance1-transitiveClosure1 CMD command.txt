@@ -1,0 +1,1 @@
+prism Prisminstance1-transitiveClosure1.pm -pctl "Rmin=?[ (F(""r1_0_done"")) ]" -exportadv best-policy.txt -exportstates states.txt
