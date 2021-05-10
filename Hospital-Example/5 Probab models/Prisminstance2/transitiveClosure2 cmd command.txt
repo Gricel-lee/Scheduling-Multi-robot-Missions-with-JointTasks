@@ -1,0 +1,1 @@
+prism transitiveClosure2.pm -pctl "Rmin=?[ (F(""jointtask_at3_0"")) & (F(""r3_0_done"")) & (F(""r4_0_done"")) ]" -exportadv best-policy.txt -exportstates states.txt
