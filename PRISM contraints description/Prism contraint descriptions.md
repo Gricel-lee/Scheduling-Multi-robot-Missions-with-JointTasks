@@ -28,18 +28,20 @@ Where state 1 of r3 in the MDP means that r3 is doing "at1", and state 2 of r4 m
 (**Note**: r3_0 means robot r3 intance 0. This index 0 is placed by Alloy after the allocation of tasks to robots.)
 
 ## For consecutive, non ordered tasks
-### a) All subtasks allocated to the same robot
 If a composite task has consecutive subtasks (done one after the other) regarless of the order they are executed, this is model within the MDP in two ways:
-- if the tasks are assigned to the same robot
+### a) All subtasks allocated to the same robot
+If the subtasks of composite task ct are assigned to the same robot, once a subtask is started by the robot, the only transitions available are to do the other subtasks until they are done:
 ```
-for t in subtasks:
+for t in subtasks of ct:
   if robot in state(t):
-    - transitions only go to other tasks in the composite task if they haven't been done
-    - transitions go to any other task outside the composite task if they have been done
+    if all subtasks haven't been done:
+       transitions only go to other tasks in the composite task if they haven't been done
+    elif:
+       transitions go to any other task outside the composite task if they have been done
 ```
 ### Example 
 A room needs to be cleaned. It requires to clean the floor and saitize with UV light, independently of the order.
-This is model as a compound task, ct10, with (atomic) subtasks, at12 and at22, done consecutively, regardless of the order. Both atomic tasks were allocated to the same robot r1 by Alloy beforehand. the MDP model would look like:
+This is model as a compound task, ct10, with (atomic) subtasks, at12 and at22, done consecutively, regardless of the order. Both atomic tasks were allocated to the same robot r1 by Alloy beforehand. the MDP model looks like:
 
 
 ![Diagram](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/blob/master/PRISM%20contraints%20description/consecutive1.JPG)
@@ -48,7 +50,9 @@ where task at22 is done in state 4, and task at12 in 7 of module R1 (robot 1). H
 This is similar from state 7 (**r1=7**)
 
 ### b) Subtasks allocated to multiple robots
-- if the tasks are assigned to different robots
+If the subtasks are assigned to different robots, this is accomplish in the MDP by synchronization between modules, so that robot i waits for robot j to do the next task. This is explained in the next example.
 ### Example
+A room needs to be cleaned. It requires to clean the floor and saitize with UV light, independently of the order.
+Alloy assigned robot r1 and r2 to do this two subtasks, named as at22 and at11. The MDP model looks like:
 
 ![Diagram](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/blob/master/PRISM%20contraints%20description/consecutive2.JPG)
