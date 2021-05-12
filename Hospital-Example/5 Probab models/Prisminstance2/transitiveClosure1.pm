@@ -22,7 +22,6 @@ module R1_0
    [r1_0_cost0_2] r1_0=0 & r1_0_at2_2=false -> (r1_0' = 2) & (r1_0_at2_2'=true);
    [r1_0_cost0_3] r1_0=0 & r1_0_at1_2=false -> (r1_0' = 3) & (r1_0_at1_2'=true);
    // travel from state 1
-   [r1_0_cost1_1] r1_0=1 & r1_0_at4_0=false -> (r1_0' = 1) & (r1_0_at4_0'=true);
    [r1_0_cost1_2] r1_0=1 & r1_0_at2_2=false -> (r1_0' = 2) & (r1_0_at2_2'=true);
    [r1_0_cost1_3] r1_0=1 & r1_0_at1_2=false -> (r1_0' = 3) & (r1_0_at1_2'=true);
    // travel from state 2  -- if robot get here, and r2_0_at1_1 is not done, do it
@@ -80,30 +79,28 @@ module R2_0
    endmodule
 
 rewards
-   [r1_0_cost0_1] true: 1;
-   [r1_0_cost0_2] true: 1;
-   [r1_0_cost0_3] true: 1;
-   [r1_0_cost1_1] true: 1;
-   [r1_0_cost1_2] true: 1;
-   [r1_0_cost1_3] true: 1;
-   [r1_0_cost2_1] true: 1;
-   [r1_0_cost2_3] true: 1;
-   [r1_0_cost3_1] true: 1;
-   [r1_0_cost3_2] true: 1;
-   [r2_0_cost0_1] true: 1;
-   [r2_0_cost0_2] true: 1;
-   [r2_0_cost0_3] true: 1;
-   [r2_0_cost0_4] true: 1;
-   [r2_0_cost1_2] true: 1;
-   [r2_0_cost1_3] true: 1;
-   [r2_0_cost1_4] true: 1;
-   [r2_0_cost2_1] true: 1;
-   [r2_0_cost2_3] true: 1;
-   [r2_0_cost2_4] true: 1;
-   [r2_0_cost3_1] true: 1;
-   [r2_0_cost3_2] true: 1;
-   [r2_0_cost3_4] true: 1;
-   [r2_0_cost4_1] true: 1;
-   [r2_0_cost4_2] true: 1;
-   [r2_0_cost4_3] true: 1;
+   [r1_0_cost0_1] true: 141; //cost from initial position of robot 
+   [r1_0_cost0_2] true: 100; //cost from initial position of robot 
+   [r1_0_cost0_3] true: 141; //cost from initial position of robot 
+   [r1_0_cost1_2] true: 100;
+   [r1_0_cost1_3] true: 0;
+   [r1_0_cost2_1] true: 100;
+   [r1_0_cost2_3] true: 100;
+   [r1_0_cost3_1] true: 0;
+   [r1_0_cost3_2] true: 100;
+   [r2_0_cost0_2] true: 100; //cost from initial position of robot 
+   [r2_0_cost0_3] true: 100; //cost from initial position of robot 
+   [r2_0_cost0_4] true: 111; //cost from initial position of robot 
+   [r2_0_cost1_2] true: 50;
+   [r2_0_cost1_3] true: 50;
+   [r2_0_cost1_4] true: 100;
+   [r2_0_cost2_1] true: 50;
+   [r2_0_cost2_3] true: 0;
+   [r2_0_cost2_4] true: 50;
+   [r2_0_cost3_1] true: 50;
+   [r2_0_cost3_2] true: 0;
+   [r2_0_cost3_4] true: 50;
+   [r2_0_cost4_1] true: 100;
+   [r2_0_cost4_2] true: 50;
+   [r2_0_cost4_3] true: 50;
 endrewards
