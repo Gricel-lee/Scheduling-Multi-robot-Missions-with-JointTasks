@@ -1,1 +1,1 @@
-prism transitiveClosure1.pm -pctl "Rmin=?[ (F(""r1_0_done"")) & (F(""r2_0_done"")) & ((!((""r1_0_at1_2"") | (""r2_0_at2_0""))) U (""r1_0_at4_0"")) ]" -exportadv best-policy.txt -exportstates states.txt
+prism transitiveClosure1.pm -pctl "Rmin=?[ (F(""r1_0_done"")) & (F(""r2_0_done"")) & ((!(("r1_0_at1_2") | ("r2_0_at2_0"))) U ("r1_0_at4_0")) ]" -exportadv best-policy.txt -exportstates states.txt

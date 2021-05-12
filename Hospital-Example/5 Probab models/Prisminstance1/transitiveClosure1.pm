@@ -77,49 +77,49 @@ endmodule
 
 
 rewards
-   [r1_0_cost0_1] true: 1;
-   [r1_0_cost0_2] true: 1;
-   [r1_0_cost0_3] true: 1;
-   [r1_0_cost0_4] true: 1;
-   [r1_0_cost0_5] true: 1;
-   [r1_0_cost0_6] true: 1;
-   [r1_0_cost0_7] true: 1;
-   [r1_0_cost1_4] true: 1;
-   [r1_0_cost1_7] true: 1;
-   [r1_0_cost2_1] true: 1;
-   [r1_0_cost2_3] true: 1;
-   [r1_0_cost2_4] true: 1;
-   [r1_0_cost2_5] true: 1;
-   [r1_0_cost2_6] true: 1;
-   [r1_0_cost2_7] true: 1;
-   [r1_0_cost3_1] true: 1;
-   [r1_0_cost3_2] true: 1;
-   [r1_0_cost3_4] true: 1;
-   [r1_0_cost3_5] true: 1;
-   [r1_0_cost3_6] true: 1;
-   [r1_0_cost3_7] true: 1;
-   [r1_0_cost4_1] true: 1;
-   [r1_0_cost4_2] true: 1;
-   [r1_0_cost4_3] true: 1;
-   [r1_0_cost4_5] true: 1;
-   [r1_0_cost4_6] true: 1;
-   [r1_0_cost4_7] true: 1;
-   [r1_0_cost5_1] true: 1;
-   [r1_0_cost5_2] true: 1;
-   [r1_0_cost5_3] true: 1;
-   [r1_0_cost5_4] true: 1;
-   [r1_0_cost5_6] true: 1;
-   [r1_0_cost5_7] true: 1;
-   [r1_0_cost6_1] true: 1;
-   [r1_0_cost6_2] true: 1;
-   [r1_0_cost6_3] true: 1;
-   [r1_0_cost6_4] true: 1;
-   [r1_0_cost6_5] true: 1;
-   [r1_0_cost6_7] true: 1;
-   [r1_0_cost7_1] true: 1;
-   [r1_0_cost7_2] true: 1;
-   [r1_0_cost7_3] true: 1;
-   [r1_0_cost7_4] true: 1;
-   [r1_0_cost7_5] true: 1;
-   [r1_0_cost7_6] true: 1;
+   [r1_0_cost0_1] true: 141; //cost from initial position of robot 
+   [r1_0_cost0_2] true: 100; //cost from initial position of robot 
+   [r1_0_cost0_3] true: 111; //cost from initial position of robot 
+   [r1_0_cost0_4] true: 141; //cost from initial position of robot 
+   [r1_0_cost0_5] true: 100; //cost from initial position of robot 
+   [r1_0_cost0_6] true: 111; //cost from initial position of robot 
+   [r1_0_cost0_7] true: 141; //cost from initial position of robot 
+   [r1_0_cost1_4] true: 0;
+   [r1_0_cost1_7] true: 0;
+   [r1_0_cost2_1] true: 100;
+   [r1_0_cost2_3] true: 50;
+   [r1_0_cost2_4] true: 100;
+   [r1_0_cost2_5] true: 0;
+   [r1_0_cost2_6] true: 50;
+   [r1_0_cost2_7] true: 100;
+   [r1_0_cost3_1] true: 50;
+   [r1_0_cost3_2] true: 50;
+   [r1_0_cost3_4] true: 50;
+   [r1_0_cost3_5] true: 50;
+   [r1_0_cost3_6] true: 0;
+   [r1_0_cost3_7] true: 50;
+   [r1_0_cost4_1] true: 0;
+   [r1_0_cost4_2] true: 100;
+   [r1_0_cost4_3] true: 50;
+   [r1_0_cost4_5] true: 100;
+   [r1_0_cost4_6] true: 50;
+   [r1_0_cost4_7] true: 0;
+   [r1_0_cost5_1] true: 100;
+   [r1_0_cost5_2] true: 0;
+   [r1_0_cost5_3] true: 50;
+   [r1_0_cost5_4] true: 100;
+   [r1_0_cost5_6] true: 50;
+   [r1_0_cost5_7] true: 100;
+   [r1_0_cost6_1] true: 50;
+   [r1_0_cost6_2] true: 50;
+   [r1_0_cost6_3] true: 0;
+   [r1_0_cost6_4] true: 50;
+   [r1_0_cost6_5] true: 50;
+   [r1_0_cost6_7] true: 50;
+   [r1_0_cost7_1] true: 0;
+   [r1_0_cost7_2] true: 100;
+   [r1_0_cost7_3] true: 50;
+   [r1_0_cost7_4] true: 0;
+   [r1_0_cost7_5] true: 100;
+   [r1_0_cost7_6] true: 50;
 endrewards
