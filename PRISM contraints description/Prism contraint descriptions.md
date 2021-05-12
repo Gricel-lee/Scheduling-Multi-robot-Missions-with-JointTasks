@@ -37,7 +37,7 @@ for t in subtasks:
     - transitions only go to other tasks in the composite task if they haven't been done
     - transitions go to any other task outside the composite task if they have been done
 ```
-### Example
+### Example 
 A room needs to be cleaned. It requires to clean the floor and saitize with UV light, independently of the order.
 This is model as a compound task, ct10, with (atomic) subtasks, at12 and at22, done consecutively, regardless of the order. Both atomic tasks were allocated to the same robot r1 by Alloy beforehand. the MDP model would look like:
 
