@@ -28,7 +28,7 @@ Where state 1 of r3 in the MDP means that r3 is doing "at1", and state 2 of r4 m
 (**Note**: r3_0 means robot r3 intance 0. This index 0 is placed by Alloy after the allocation of tasks to robots.)
 
 ## For consecutive, non ordered tasks
-### Same robot
+### a) All subtasks allocated to the same robot
 If a composite task has consecutive subtasks (done one after the other) regarless of the order they are executed, this is model within the MDP in two ways:
 - if the tasks are assigned to the same robot
 ```
@@ -47,7 +47,7 @@ This is model as a compound task, ct10, with (atomic) subtasks, at12 and at22, d
 where task at22 is done in state 4, and task at12 in 7 of module R1 (robot 1). Hence, in state 4 (r1=4), the transitions can go to any other state from 1 to 6 (0 is the initial state where the robot starts and 7 is part of the composite task, so it cannot go there; here **-> (r1' = 5) ,  -> (r1' = 6)** are only shown) if r1 has done at12 **r1_at12=true**. Otherwise (**r1_at12=false**), the only transition is to go and do it at state 7 **->(r1' = 7) & (r1_at12'=true)**
 This is similar from state 7 (**r1=7**)
 
-### Multiple robots
+### b) Subtasks allocated to multiple robots
 - if the tasks are assigned to different robots
 ### Example
 
