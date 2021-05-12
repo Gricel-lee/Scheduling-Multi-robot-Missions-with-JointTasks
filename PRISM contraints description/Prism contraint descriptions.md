@@ -57,4 +57,5 @@ Alloy assigned robot r1 and r2 to do this two subtasks, named as at22 and at11. 
 
 ![Diagram](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/blob/master/PRISM%20contraints%20description/consecutive2.JPG)
 
-where robot r1 does at22 at state 2, and robot r2 does at11 at state 4, in their respective modules. When robot r1 reaches state 2, if r2 hasn't finished at
+where robot r1 does at22 at state 2, and robot r2 does at11 at state 4, at their respective modules. When robot r1 reaches state 2, if r2 hasn't done at11 **(r2_at11=false)**, it synchronized using the action **[synchronize_r2_at11]**. This means r2 cannot continue only r1 does the next task, meaning both will be doing one task after the other.
+This is similar for robot 2 at state 4.
