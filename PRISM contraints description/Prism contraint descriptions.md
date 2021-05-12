@@ -56,3 +56,5 @@ A room needs to be cleaned. It requires to clean the floor and saitize with UV l
 Alloy assigned robot r1 and r2 to do this two subtasks, named as at22 and at11. The MDP model looks like:
 
 ![Diagram](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/blob/master/PRISM%20contraints%20description/consecutive2.JPG)
+
+where robot r1 does at22 at state 2, and robot r2 does at11 at state 4, in their respective modules. When robot r1 reaches state 2, if r2 hasn't finished at
