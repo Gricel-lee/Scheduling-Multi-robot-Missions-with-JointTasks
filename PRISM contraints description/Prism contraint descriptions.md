@@ -3,13 +3,13 @@
 Once a set of robots have allocated all the tasks necessary to complete the missions, the order on which the tasks are to be executed depends on the constraints given by the tasks themselves:
 
 - when an atomic task requires more than one robot (joint task)
-- when a compound task requires its subtasks to be executed one after the other (consecutive, non ordered tasks)
-- when a ompound task requires its subtasks to be executed in order (non consecutive, ordered tasks)
+- when a compound task requires its subtasks to be executed one after the other (consecutive non-ordered tasks)
+- when a ompound task requires its subtasks to be executed in order (non-consecutive ordered tasks)
 - when a compound task requires its subtasks to be executed consecutively (consecutive ordered tasks)
 
 There may be different ways to encode this in PRISM model checker language. Here we present how we deal with this restrictions in an MDP (Markov Decision Process) model.
 
-## For joint tasks
+## 1) For joint tasks
 
 For each joint (atomic) tasks, a label is created in the MDP:
 
@@ -30,7 +30,7 @@ Where state 1 of r3 in the MDP means that r3 is doing "at1", and state 2 of r4 m
 
 
 
-## For consecutive, non ordered tasks
+## 2) For consecutive non-ordered tasks
 If a compound task has consecutive subtasks (done one after the other) regarless of the order they are executed, this is modelled within the MDP in two ways:
 ### a) All subtasks allocated to the same robot
 If the subtasks of compound task ct are assigned to the same robot, once a subtask is started by the robot, the only transitions available are to do the other subtasks until they are done:
@@ -65,7 +65,7 @@ This is similar for robot 2 at state 4.
 
 
 
-## For non-consecutive, ordered tasks
+## 3) For non-consecutive ordered tasks
 If a compound task has consecutive (done one after the other) ordered (done in the order they appear in the list) subtasks, this is modelled within the MDP by:
 ```
 for each task t in ct:
@@ -80,7 +80,7 @@ for each task t in ct:
 A robot needs to pick up the medicine before deliver it to the patient. Once the robot has the medicine, it can do other tasks on its way, before delivering the medicine.
 
 
-## For consecutive ordered tasks
+## 4) For consecutive ordered tasks
 The compound task ct has consecutive and ordered constraints. This is encoded in the MDP by:
 ### a) All subtasks allocated to the same robot
 ```
