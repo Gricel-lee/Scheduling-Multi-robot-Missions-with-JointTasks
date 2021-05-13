@@ -1,6 +1,6 @@
 # Task scheduling constraints:
 
-Once a set of robots have allocated all the tasks necessary to complete the missions, the order on which the tasks are to be executed depends on the constraints given by the tasks themselves:
+Once each robot has allocated tasks necessary to complete the mission, the order on which the tasks are to be executed must follow the constraints given by the tasks themselves:
 
 - when an atomic task requires more than one robot (joint task)
 - when a compound task requires its subtasks to be executed one after the other (consecutive non-ordered tasks)
@@ -14,6 +14,9 @@ There may be different ways to encode this in PRISM model checker language. Here
 For each joint (atomic) tasks, a label is created in the MDP:
 
 ![Diagram](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/blob/master/PRISM%20contraints%20description/jointtask.JPG)
+
+[//]: # (this equation was done in latex and pasted as image here. \begin{equation}label\ ``jointtask\_i_t" = \bigwedge_{ r\in R ...)
+
 
 where i_t is the joint task number i, R(i_t) is the set of robots allocated to do the task, state(r,i_t) is the MDP state describing that robot r is doing task i_t.
 This label is checked to be true within the property to synthesise the policy.
