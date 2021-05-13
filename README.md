@@ -13,6 +13,7 @@ The **Hospital-Example** folder contains a hospital case study to demonstrait th
 - Probab models -  Contains a set of probabilisitc models. For each model found by Alloy, transitive clousure is use to separate group of robots that are constrained by their tasks and require to be model together (for example, in joint tasks where multiple robots do the same task at the time). Hence, for each group of robots sharing a task constraint, there is a Markov Decisio Process (MDP) model created in [PRISM](https://www.prismmodelchecker.org/) language.
 - Policy synthesis - This folder has PRISM output and its interpretation for the case study.
 
+The **PRISM contraints description** folder contains an explanation on the task constraints (order, consecutiveness and joint tasks) captured in PRISM MDPs.
 
 ## Tool description
 The approach taken for the scheduling of tasks consists in three stages.
