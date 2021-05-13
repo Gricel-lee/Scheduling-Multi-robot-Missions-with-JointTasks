@@ -1,6 +1,6 @@
 # Task scheduling constraints:
 
-Once a set of robots have allocated all the tasks necessary to complete the missions, the order on which the tasks are to be executed depends on the constraints given by the tasks themselves:
+Once each robot has allocated tasks necessary to complete the mission, the order on which the tasks are to be executed must follow the constraints given by the tasks themselves:
 
 - when an atomic task requires more than one robot (joint task)
 - when a compound task requires its subtasks to be executed one after the other (consecutive non-ordered tasks)
