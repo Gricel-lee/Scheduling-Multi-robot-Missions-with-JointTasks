@@ -3,7 +3,7 @@ mdp
 label "r4_0_done" = (r4_0_at3_0=true) ;
 label "r3_0_done" = (r3_0_at3_0=true) ;
 
-label "jointtask_at3_0" = (r4_0 = 0) & (r3_0 = 0) ;
+label "jointtask_at3_0" = (r4_0 = 1) & (r3_0 = 1) ;
 
 module R4_0
    //robotr4_0 has 1 tasks to schedule 
