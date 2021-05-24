@@ -1,7 +1,0 @@
-r2 init at1_0
-r2 at1_0 at2_1
-r2 at2_1 at1_1
-r1 init at2_2
-r1 at2_2 at4_0
-r1 at4_0 at1_2
-r2 at1_1 at2_0

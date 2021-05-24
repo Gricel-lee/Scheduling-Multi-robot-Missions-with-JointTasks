@@ -1,2 +1,0 @@
-r3 init at3_0
-r4 init at3_0
