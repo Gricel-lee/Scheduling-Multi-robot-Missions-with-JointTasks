@@ -1,0 +1,19 @@
+robot,start,end,task,mission task & location
+r1,00:00:00,00:05:00,travelling,travelling
+r1,00:05:00,00:35:00,at1 ct1 t2,t2 (RoomB)
+r1,00:35:00,00:35:00,travelling,travelling
+r1,00:35:00,01:35:00,at2 ct1 t2,t2 (RoomB)
+r1,01:35:00,01:38:54,travelling,travelling
+r1,01:38:54,02:08:54,at1 ct1 t1,t1 (RoomA)
+r1,02:08:54,02:08:54,travelling,travelling
+r1,02:08:54,03:08:54,at2 ct1 t1,t1 (RoomA)
+r1,03:08:54,03:24:38,travelling,travelling
+r1,03:24:38,03:29:38,at4 ct2 t4,t4 (RoomC)
+r1,03:29:38,03:29:38,travelling,travelling
+r1,03:29:38,03:59:38,at1 ct1 ct2 t4,t4 (RoomC)
+r1,03:59:38,03:59:38,travelling,travelling
+r1,03:59:38,04:59:38,at2 ct1 ct2 t4,t4 (RoomC)
+r3,00:00:00,00:06:55,travelling,travelling
+r3,00:06:55,00:46:55,at3 t3,t3 (RoomD)
+r4,00:00:00,00:05:00,travelling,travelling
+r4,00:06:55,00:44:59,at3 t3,t3 (RoomD)

@@ -1,0 +1,10 @@
+robot,start,end,task description,task & location
+r2,,,at1_1 ct1_1 t2,t2 RoomB
+r2,,,at2_1 ct1_1 t2,t2 RoomB
+r2,,,at1_0 ct1_2 t1,t1 RoomA
+r2,,,at2_0 ct1_2 t1,t1 RoomA
+r1,,,at4_0 ct2_0 t4,t4 RoomC
+r1,,,at1_2 ct1_0 ct2_0 t4,t4 RoomC
+r1,,,at2_2 ct1_0 ct2_0 t4,t4 RoomC
+r4,,,at3_0 t3,t3 RoomD
+r3,,,at3_0 t3,t3 RoomD
