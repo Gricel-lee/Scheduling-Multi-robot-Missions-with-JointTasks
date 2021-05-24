@@ -1,0 +1,9 @@
+r2 at1_0 ct1_1 t2
+r2 at2_1 ct1_1 t2
+r2 at1_1 ct1_0 t1
+r1 at2_2 ct1_0 t1
+r1 at4_0 ct2_0 t4
+r1 at1_2 ct1_2 ct2_0 t4
+r2 at2_0 ct1_2 ct2_0 t4
+r4 at3_0 t3
+r3 at3_0 t3
