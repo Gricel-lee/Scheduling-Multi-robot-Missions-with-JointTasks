@@ -9,7 +9,7 @@ The approach taken for the scheduling of tasks consists in three stages.
 - Stage one is the inputs as in the [Input specifications folder](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/tree/master/Hospital-Example/2%20Input%20specifications).
 - Stage two allocates tasks to robots via the constraint solver Alloy. A single file with the problem in declarative Alloy language is created. The constraint solver returns a family of models that fulfil the constraints impose by which tasks a robot can execute given its set of capabilities.
 - Stage three synthesize a policy for the scheduling of tasks by each robot. The step starts applying the transitive clousure (for each model found by Alloy) to find which robots share constraints so that they must be modelled together (for example, when two robots perform a joint task).
-![Diagram](https://user-images.githubusercontent.com/63869574/117586412-3e057600-b0d5-11eb-899d-3f0ecb5b4155.JPG)
+![Diagram](![diagram3](https://user-images.githubusercontent.com/63869574/119576040-3d2b4000-bd75-11eb-9a9a-45127af3c26d.png))
 
 ## Content
 
@@ -22,4 +22,4 @@ The **Hospital-Example** folder contains a hospital case study to demonstrait th
 - Probab models -  Contains a set of probabilisitc models. For each model found by Alloy, transitive clousure is use to separate group of robots that are constrained by their tasks and require to be model together (for example, in joint tasks where multiple robots do the same task at the time). Hence, for each group of robots sharing a task constraint, there is a Markov Decisio Process (MDP) model created in [PRISM](https://www.prismmodelchecker.org/) language.
 - Policy synthesis - This folder has PRISM output and its interpretation for the case study.
 
-The **MDP generation** folder contains an explanation on the task constraints (ordered, consecutive and joint tasks) captured in PRISM MDPs. to MDP fragments on the PRISM model checker.
+The **MDP generation in PRISM** folder contains an explanation on the task constraints (ordered, consecutive and joint tasks) captured in PRISM MDPs. to MDP fragments on the PRISM model checker.
