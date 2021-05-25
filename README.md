@@ -1,8 +1,17 @@
 # Scheduling Multi-robot Missions with JointTasks
 
-We present a work-in-progress on multi-robot allocation and scheduling of missions from high level specifications. Missions can include atomic tasks and compount tasks. Atomic tasks are single tasks that can be done by one or multiple robots, compound tasks are tasks that can be decomposed into atomic or composite tasks  [[1]](#1).
+We present a work-in-progress approach to scheduling multi-robot missions comprising tasks that need to be performed by multiplerobots. Our approach (1) supports the scheduling of such missions forheterogeneous robots, (2) takes into account dependability, performanceand  other  nonfunctional  requirements,  and  (3)  guarantees  compliancewith functional and nonfunctional mission requirements by using a com-binations of formal techniques to allocate the mission tasks to individualrobots, and to plan the order in which each robot will execute its allo-cated tasks. We show the effectiveness of our approach by applying it tothe scheduling of multi-robot missions in a hospital-support application.
 
-## Folder content
+
+
+## Approach description
+The approach taken for the scheduling of tasks consists in three stages.
+- Stage one is the inputs as in the [Input specifications folder](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/tree/master/Hospital-Example/2%20Input%20specifications).
+- Stage two allocates tasks to robots via the constraint solver Alloy. A single file with the problem in declarative Alloy language is created. The constraint solver returns a family of models that fulfil the constraints impose by which tasks a robot can execute given its set of capabilities.
+- Stage three synthesize a policy for the scheduling of tasks by each robot. The step starts applying the transitive clousure (for each model found by Alloy) to find which robots share constraints so that they must be modelled together (for example, when two robots perform a joint task).
+![Diagram](https://user-images.githubusercontent.com/63869574/117586412-3e057600-b0d5-11eb-899d-3f0ecb5b4155.JPG)
+
+## Content
 
 The **Hospital-Example** folder contains a hospital case study to demonstrait the approach. A group of robots is deployed to accomplish a "mission" comprising a set of tasks. This is orginized with the following subfolders:
 
@@ -13,17 +22,4 @@ The **Hospital-Example** folder contains a hospital case study to demonstrait th
 - Probab models -  Contains a set of probabilisitc models. For each model found by Alloy, transitive clousure is use to separate group of robots that are constrained by their tasks and require to be model together (for example, in joint tasks where multiple robots do the same task at the time). Hence, for each group of robots sharing a task constraint, there is a Markov Decisio Process (MDP) model created in [PRISM](https://www.prismmodelchecker.org/) language.
 - Policy synthesis - This folder has PRISM output and its interpretation for the case study.
 
-The **PRISM contraints description** folder contains an explanation on the task constraints (order, consecutiveness and joint tasks) captured in PRISM MDPs.
-
-## Tool description
-The approach taken for the scheduling of tasks consists in three stages.
-- Stage one is the inputs as in the [Input specifications folder](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/tree/master/Hospital-Example/2%20Input%20specifications).
-- Stage two allocates tasks to robots via the constraint solver Alloy. A single file with the problem in declarative Alloy language is created. The constraint solver returns a family of models that fulfil the constraints impose by which tasks a robot can execute given its set of capabilities.
-- Stage three synthesize a policy for the scheduling of tasks by each robot. The step starts applying the transitive clousure (for each model found by Alloy) to find which robots share constraints so that they must be modelled together (for example, when two robots perform a joint task).
-![Diagram](https://user-images.githubusercontent.com/63869574/117586412-3e057600-b0d5-11eb-899d-3f0ecb5b4155.JPG)
-
-## References
-<a id="1">[1]</a> 
-Korsah, G. A., Stentz, A., & Dias, M. B. (2013).
-A comprehensive taxonomy for multi-robot task allocation.
-The International Journal of Robotics Research, 32(12), 1495-1512.
+The **MDP generation** folder contains an explanation on the task constraints (ordered, consecutive and joint tasks) captured in PRISM MDPs. to MDP fragments on the PRISM model checker.
