@@ -29,4 +29,4 @@ The **Hospital-Example** folder contains a hospital case study to demonstrate th
 - Policy synthesis - This folder has the "best policy" PRISM output for each MDP (best-policy.txt), and for reference, the states of the MDP (states.txt). As a reference, a file "\_description-actions.txt" is added to see the actions taken from the best policy file.
 - Plan - It contains: the robots' plan in an csv file (gantt_file.csv); the gantt chart for the mission tasks plan (gantt_file.html); the gantt chart showing the atomic tasks (gantt_file-per-tasks.html); and the robots and total travelling distance (Prismintance1_travel_distance.xlsx).
 
-The **MDP generation in PRISM** folder contains an explanation of the modelling of task constraints (ordered, consecutive, and joint tasks) captured in the PRISM MDPs models.
+The **MDP generation in PRISM** folder contains an explanation of the modelling of task complex requirements (ordered, consecutive, and joint tasks) captured in the PRISM MDPs models.
