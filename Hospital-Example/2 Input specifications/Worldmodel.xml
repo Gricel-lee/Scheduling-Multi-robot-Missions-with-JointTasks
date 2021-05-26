@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worldmodel>
 
-	<location loc="(175,25)" ID="l1" loc_atomicProp="Warehouse1"/>
-	<location loc="(225,25)" ID="l2" loc_atomicProp="Warehouse2"/>
-	<location loc="(275,25)" ID="l3" loc_atomicProp="Warehouse3"/>
-	<location loc="(325,25)" ID="l4" loc_atomicProp="Warehouse4"/>
+	<location loc="(175,25)" ID="l1" loc_atomicProp="warehouse1"/>
+	<location loc="(225,25)" ID="l2" loc_atomicProp="warehouse2"/>
+	<location loc="(275,25)" ID="l3" loc_atomicProp="warehouse3"/>
+	<location loc="(325,25)" ID="l4" loc_atomicProp="warehouse4"/>
 	
 	<location loc="(50,150)" ID="l9" loc_atomicProp="RoomA"/>
 	<location loc="(50,50)" ID="l10" loc_atomicProp="RoomB"/>
