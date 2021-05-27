@@ -50,7 +50,7 @@ A room needs to be cleaned. It requires to clean the floor and saitize with UV l
 This is model as a compound task, ct10, with (atomic) subtasks, at12 and at22, done consecutively, regardless of the order. Both atomic tasks were allocated to the same robot r1 by Alloy beforehand. the MDP model looks like:
 
 
-![Diagram](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/blob/master/PRISM%20contraints%20description/consecutive1.JPG)
+![Diagram](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/blob/master/MDP%20generation%20in%20PRISM/consecutive1.JPG)
 
 where task at22 is done in state 4, and task at12 in 7 of module R1 (robot 1). Hence, in state 4 (r1=4), the transitions can go to any other state from 1 to 6 (0 is the initial state where the robot starts and 7 is part of the compound task, so it cannot go there; here **-> (r1' = 5) ,  -> (r1' = 6)** are only shown) if r1 has done at12 **r1_at12=true**. Otherwise (**r1_at12=false**), the only transition is to go and do it at state 7 **->(r1' = 7) & (r1_at12'=true)**
 This is similar from state 7 (**r1=7**)
@@ -61,7 +61,7 @@ If the subtasks are assigned to different robots, this is accomplish in the MDP 
 A room needs to be cleaned. It requires to clean the floor and saitize with UV light, independently of the order.
 Alloy assigned robot r1 and r2 to do this two subtasks, named as at22 and at11. The MDP model looks like:
 
-![Diagram](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/blob/master/PRISM%20contraints%20description/consecutive2.JPG)
+![Diagram](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/blob/master/MDP%20generation%20in%20PRISM/consecutive2.JPG)
 
 where robot r1 does at22 at state 2, and robot r2 does at11 at state 4, at their respective modules. When robot r1 reaches state 2, if r2 hasn't done at11 **(r2_at11=false)**, it synchronized using the action **[synchronize_r2_at11]**. This means r2 cannot continue only r1 does the next task, meaning both will be doing one task after the other.
 This is similar for robot 2 at state 4.
