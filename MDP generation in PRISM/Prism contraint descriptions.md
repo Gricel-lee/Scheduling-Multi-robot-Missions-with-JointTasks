@@ -13,7 +13,7 @@ There may be different ways to encode this in PRISM model checker language. Here
 
 For each joint (atomic) tasks, a label is created in the MDP:
 
-![Diagram](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/blob/master/PRISM%20contraints%20description/jointtask.JPG)
+![Diagram](https://github.com/Gricel-lee/Scheduling-Multi-robot-Missions-with-JointTasks/blob/master/MDP%20generation%20in%20PRISM/jointtask.JPG)
 
 [//]: # (this equation was done in latex and pasted as image here. \begin{equation}label\ ``jointtask\_i_t" = \bigwedge_{ r\in R ...)
 
