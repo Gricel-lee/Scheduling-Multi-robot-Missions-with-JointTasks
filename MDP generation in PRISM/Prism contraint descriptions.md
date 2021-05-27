@@ -69,7 +69,7 @@ This is similar for robot 2 at state 4.
 
 
 ## 3) For non-consecutive ordered tasks
-If a compound task has consecutive (done one after the other) ordered (done in the order they appear in the list) subtasks, this is modelled within the MDP by:
+If a compound task has non-consecutive (done one after the other) ordered (done in the order they appear in the list) subtasks, this is modelled within the MDP by:
 ```
 for each task t in ct:
   for each transition (named "command" in PRISM) of the MDP:
