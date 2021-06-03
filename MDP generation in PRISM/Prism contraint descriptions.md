@@ -4,7 +4,7 @@ Once each robot has allocated tasks necessary to complete the mission, the order
 
 - when an atomic task requires more than one robot (joint task)
 - when a compound task requires its subtasks to be executed one after the other (consecutive non-ordered tasks)
-- when a ompound task requires its subtasks to be executed in order (non-consecutive ordered tasks)
+- when a compound task requires its subtasks to be executed in order (non-consecutive ordered tasks)
 - when a compound task requires its subtasks to be executed consecutively (consecutive ordered tasks)
 
 There may be different ways to encode this in PRISM model checker language. Here we present how we deal with this restrictions in an MDP (Markov Decision Process) model.
